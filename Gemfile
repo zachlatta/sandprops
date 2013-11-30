@@ -27,6 +27,29 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Let's make frontend just a little easier.
+gem 'foundation-rails'
+
+# Use devise for authentication.
+gem 'devise'
+
+# Make mocking easy.
+gem 'factory_girl_rails'
+
+# Use simple_form for forms.
+gem 'simple_form'
+
+# Make application configuration less painful
+gem 'figaro'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
