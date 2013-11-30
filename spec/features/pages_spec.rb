@@ -1,10 +1,11 @@
 require "spec_helper"
 
-feature "Accessing pages" do
+describe "Pages" do
   subject { page }
 
-  scenario "visiting index" do
-    visit "/"
-    expect(page).to have_content("Sandcastle Investment Properties")
+  context "index" do
+    before { visit "/" }
+    it { should have_content("Sandcastle Investment Properties") }
+    it { should have_title("Sandcastle Investment Properties") }
   end
 end
