@@ -1,0 +1,15 @@
+<div class="row">
+  <% if flash[:alert] %>
+    <div data-alert class="alert-box warning">
+    <%= flash[:alert] %>
+    <a href="#" class="close">&times;</a>
+  </div>
+<% end %>
+
+  <% if flash[:notice] %>
+    <div data-alert class="alert-box success">
+    <%= flash[:notice] %>
+    <a href="#" class="close">&times;</a>
+  </div>
+<% end %>
+</div>
