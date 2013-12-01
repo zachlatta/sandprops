@@ -12,10 +12,17 @@
   </head>
 
   <body>
-    <%= render "layouts/flash" %>
-    <%= render "layouts/header" %>
-    <%= yield %>
-    <%= render "layouts/footer" %>
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <%= render "layouts/flash" %>
+        <%= render "layouts/header" %>
+        <section class="main-section">
+          <%= yield %>
+        </section>
+        <%= render "layouts/footer" %>
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

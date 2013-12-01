@@ -42,6 +42,9 @@ gem 'simple_form'
 # Make application configuration less painful
 gem 'figaro'
 
+# Use HAML for markup
+gem 'haml-rails'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
