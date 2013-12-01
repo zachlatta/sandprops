@@ -45,6 +45,9 @@ gem 'figaro'
 # Use HAML for markup
 gem 'haml-rails'
 
+# SASS helpers
+gem "compass-rails", "~> 2.0.alpha.0"
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
