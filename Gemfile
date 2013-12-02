@@ -48,6 +48,9 @@ gem 'haml-rails'
 # SASS helpers
 gem "compass-rails", "~> 2.0.alpha.0"
 
+# Easy file attachments
+gem "paperclip"
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'

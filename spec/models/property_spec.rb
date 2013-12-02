@@ -7,6 +7,7 @@ describe Property do
 
   describe "attributes" do
     it { should belong_to :owner }
+    it { should have_many(:units).dependent(:destroy)}
     it { should respond_to :address }
   end
 
