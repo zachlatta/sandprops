@@ -1,5 +1,14 @@
 require 'spec_helper'
 
 describe Owner do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before { @owner = FactoryGirl.create(:owner) }
+
+  describe "attributes" do
+    it { should have_one :user }
+  end
+
+  context "no user" do
+    before { @owner.user = nil }
+    it { should_not be_valid }
+  end
 end
