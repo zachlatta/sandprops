@@ -10,9 +10,9 @@
   %body
     .off-canvas-wrap
       .inner-wrap
-        = render "layouts/flash"
         = render "layouts/header"
         %section.main-section
+          = render "layouts/flash"
           = yield
         = render "layouts/footer"
         %a.exit-off-canvas
