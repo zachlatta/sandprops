@@ -51,6 +51,7 @@ gem "compass-rails", "~> 2.0.alpha.0"
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'shoulda'
   gem 'launchy'
   gem 'guard-rspec'
   gem 'guard-livereload'
