@@ -2,11 +2,10 @@
   %ul.title-area
     %li.name
       %h1
-        %a{:href => "#"} Sandcastle Investment Properties
+        %a{:href => "/"} Sandcastle Investment Properties
   %section.top-bar-section
     %ul.right
-      %li
-        %a{:href => "/"} Home
+      = render "layouts/nav_items"
 %nav.tab-bar.show-for-small
   %section.left-small
     %a.left-off-canvas-toggle.menu-icon
@@ -17,5 +16,4 @@
   %ul.off-canvas-list
     %li
       %label Navigation
-    %li
-      %a{:href => "/"} Home
+    = render "layouts/nav_items"

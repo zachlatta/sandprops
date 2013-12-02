@@ -23,4 +23,7 @@ SimpleForm.setup do |config|
 
   # The default wrapper to be used by the FormBuilder.
   config.default_wrapper = :foundation
+  
+  # Inline checkboxes
+  config.boolean_style = :inline
 end
